@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+   --heading-font: 'Lora', serif;
+   --body-font: 'Arial', sans-serif;
+   --paragraph-font: 'Helvetica', sans-serif; 
+   
+   --body-color: #333;
+   --lines-color: #d0d0d0;
+   --normal-visited-color: #666;
+   --active-color: #deb887;
+   --hover-color: #00ddff;
+}
+
+/* body */
+.post-date {
+   text-transform: uppercase;
+   font-size: 20px;
+   font-family: var(--heading-font);
+   color: var(--body-color);
+}
+
+h2 {
+   margin: 0.5rem 0;
+}
+
+h2 a {
+   text-decoration: none;
+   font-size: 20px;
+   font-family: var(--heading-font);
+   color: var(--normal-visited-color);
+}
+
+p {
+   font-family: var(--paragraph-font);
+   font-size: 16px;
+   color: var(--body-color);
+}
+
+p a {
+   text-decoration: none;
+   color: var(--normal-visited-color);
+}
+
+/* Header */
+h1 {
+   text-align: center;
+}
+
+h1 a {
+   font-family: var(--heading-font);
+   color: var(--body-color);
+   text-decoration: none;
+   font-size: 50px;
+   font-weight: 550;
+}
+
+/* Nav */
+nav {
+   border-top: 1px solid var(--lines-color);
+   border-bottom: 1px solid var(--lines-color);
+   margin: 1rem;
+}
+
+nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: space-evenly;
+   margin-left: 30%;
+}
+
+nav a {
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 18px;
+   font-family: var(--heading-font);
+   color: var(--normal-visited-color);
+}
+
+nav a:hover {
+   color: var(--hover-color);
+}
+
+nav a:active {
+   color: var(--active-color);
+}
+
+/* Content Grid */
+article {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+}
+
+article > h2 {
+   padding: 0rem 1rem 1rem 1rem;
+   text-align: right;
+}
+
+section {
+   border-left: 1px solid var(--lines-color);
+   border-bottom: 1px solid var(--lines-color);
+   padding: 0rem 1rem 1rem 1rem;
+}
+
+img {
+   max-width: 12rem;
+}
+
+@media (max-width: 600px) {
+   nav ul {
+      margin-left: 20%;
+   }
+}
+
+@media (max-width: 520px) {
+   nav ul {
+      margin-left: 10%;
+   }
+}
+
+@media (max-width: 475px) {
+   nav ul {
+      padding: 0;
+      margin: 1rem 0;
+      flex-direction: column;
+   }
+
+   nav li {
+      text-align: center;
+      padding: 0.25rem;
+   }
+
+   article {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+
+   section {
+      border: none;
+      text-align: center;
+   }
+
+   article > h2 {
+      margin: 1rem;
+      text-align: right;
+      border-bottom: 1px solid var(--lines-color);
+   }
+}
