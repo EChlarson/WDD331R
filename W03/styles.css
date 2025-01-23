@@ -1,5 +1,74 @@
+/*since older versions of most browsers don't recognize display: flex, in order to get the highest percentage of compatibility we should add all the prefixed flex declarations.*/
+/*$max-width: 960px: This is an optional parameter with a default value of 960px. If no max-width is provided, it will default to 960px.*/
 body {
   background-color: #26171A;
+}
+@media (max-width: 60em) {
+  body {
+    width: 70%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  body form input,
+  body form textarea {
+    width: 100%;
+  }
+}
+@media (max-width: 20em) {
+  body {
+    width: 90%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body form {
+    flex-wrap: wrap;
+  }
+  body form label {
+    width: 30%;
+    text-align: right;
+    margin-right: 1rem;
+  }
+  body form input,
+  body form textarea {
+    width: 70%;
+  }
+}
+body h1 {
+  color: #F26B5E;
+}
+
+#contactform {
+  background-color: #998888;
+  padding: 1rem;
+}
+#contactform legend, #contactform label {
+  color: #272727;
+}
+#contactform input, #contactform textarea {
+  color: #272727;
+  background-color: rgb(200.0769230769, 190.9230769231, 190.9230769231);
+  flex: 2;
+  /*The flex property is shorthand for:
+  flex: flex-grow flex-shrink flex-basis;*/
+}
+#contactform #submitBtn {
+  margin: 1rem;
+}
+
+fieldset > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
 }
 
 /*# sourceMappingURL=styles.css.map */

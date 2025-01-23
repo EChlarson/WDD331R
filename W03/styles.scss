@@ -1,8 +1,9 @@
 // Variables
 $body-background-color: #26171A;
-$form-background-color: #736666;
-$input-color: #F2EEE9;
-$headlines-color: #F26B5E;
+$form-background-color: #998888;
+$input-background-color: lighten($form-background-color, 20%);
+$input-color: #272727;
+$h1-color: #F26B5E;
 
 $break-small: 20em;
 $break-medium: 31em;
@@ -31,12 +32,7 @@ $break-large: 60em;
 @mixin breakpoint($break) {
    @if $break == large {
       @media (max-width: $break-large) {
-         & {
-            width: 70%;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-         }
+         @include center(70%, 900px);
          form label {
             display: block;
             margin-bottom: 0.5rem;
@@ -49,12 +45,7 @@ $break-large: 60em;
    }
    @else if $break == small {
       @media (max-width: $break-small) {
-         & {
-            width: 90%;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-         }
+         @include center(90%, 700px);
          form {
             flex-wrap: wrap;
          }
@@ -76,19 +67,29 @@ $break-large: 60em;
 //CSS
 body {
    background-color: $body-background-color;
-   @include center;
    @include breakpoint(large);
    @include breakpoint(small);
    @include breakpoint("max-width: 960px");
+   h1 {
+      color: $h1-color;
+   }
 }
 
 #contactform {
    background-color: $form-background-color;
+   padding: 1rem;
+   legend, label {
+      color: $input-color;
+   }
    input, textarea {
-      background-color: $input-color;
+      color: $input-color;
+      background-color: $input-background-color;
       flex: 2;
       /*The flex property is shorthand for:
       flex: flex-grow flex-shrink flex-basis;*/
+   }
+   #submitBtn {
+      margin: 1rem;
    }
 }
 
