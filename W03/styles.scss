@@ -1,11 +1,97 @@
-// Variables will Follow
-
-//Colors
+// Variables
 $body-background-color: #26171A;
 $form-background-color: #736666;
 $input-color: #F2EEE9;
 $headlines-color: #F26B5E;
 
+$break-small: 20em;
+$break-medium: 31em;
+$break-large: 60em;
+
+//mixin
+/*since older versions of most browsers don't recognize display: flex, in order to get the highest percentage of compatibility we should add all the prefixed flex declarations.*/
+@mixin flex-container($axis, $wrap: nowrap) {
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-flow: $axis $wrap;
+   -ms-flex-flow: $axis $wrap;
+   flex-flow: $axis $wrap;
+}
+
+/*$max-width: 960px: This is an optional parameter with a default value of 960px. If no max-width is provided, it will default to 960px.*/
+@mixin center($width, $max-width: 960px) {
+   width: $width;
+   max-width: $max-width;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+@mixin breakpoint($break) {
+   @if $break == large {
+      @media (max-width: $break-large) {
+         & {
+            width: 70%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+         }
+         form label {
+            display: block;
+            margin-bottom: 0.5rem;
+         }
+         form input,
+         form textarea {
+            width: 100%;
+         }
+      }
+   }
+   @else if $break == small {
+      @media (max-width: $break-small) {
+         & {
+            width: 90%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+         }
+         form {
+            flex-wrap: wrap;
+         }
+         form label {
+            width: 30%;
+            text-align: right;
+            margin-right: 1rem;
+         }
+         form input,
+         form textarea {
+            width: 70%;
+         }
+      }
+   } @else {
+      @media ($break) { @content; }
+   }
+} 
+
+//CSS
 body {
    background-color: $body-background-color;
+   @include center;
+   @include breakpoint(large);
+   @include breakpoint(small);
+   @include breakpoint("max-width: 960px");
+}
+
+#contactform {
+   background-color: $form-background-color;
+   input, textarea {
+      background-color: $input-color;
+      flex: 2;
+      /*The flex property is shorthand for:
+      flex: flex-grow flex-shrink flex-basis;*/
+   }
+}
+
+fieldset > div {
+   @include flex-container(column);
 }
