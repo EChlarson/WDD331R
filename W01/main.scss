@@ -127,7 +127,7 @@ nav {
   margin: 1rem;
   
   ul {
-    @include flex-container(column);
+    @include flex-container(row);
     list-style: none;
     justify-content: space-evenly;
     margin-left: 30%;
