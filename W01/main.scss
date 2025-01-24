@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+//Variables
+  $heading-font: "Lora", serif;
+  $body-font: "Arial", sans-serif;
+  $paragraph-font: "Helvetica", sans-serif;
+  $body-color: #333;
+  $lines-color: #d0d0d0;
+  $normal-visited-color: #666;
+  $active-color: #deb887;
+  $hover-color: #00ddff;
+
+  $break-small: 475px;
+  $break-medium: 520px;
+  $break-large: 600px;
+
+//mixins
+@mixin flex-container($axis, $wrap: nowrap) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: $axis $wrap;
+  -ms-flex-flow: $axis $wrap;
+  flex-flow: $axis $wrap;
+}
+
+@mixin link-styles($color) {
+  text-decoration: none;
+  color: $color;
+}
+
+@mixin breakpoint($break) {
+  @if $break == large {
+    @media (max-width: $break-large) {
+      nav ul {
+        margin-left: 20%;
+      }
+    }
+  } @else if $break == medium {
+    @media (max-width: $break-medium) {
+      nav ul {
+        margin-left: 10%;
+      }
+    }
+  } @else if $break == small {
+    @media (max-width: $break-small) {
+      nav ul {
+        padding: 0;
+        margin: 1rem 0;
+        flex-direction: column;
+      }
+      nav li {
+        text-align: center;
+        padding: 0.25rem;
+      }
+      article {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+      section {
+        border: none;
+        text-align: center;
+      }
+      article > h2 {
+        margin: 1rem;
+        text-align: right;
+        border-bottom: 1px solid $lines-color;
+      }
+    }
+  } @else {
+    @media ($break) {@content;}
+  }
+}
+
+//Base
+body {
+  @include breakpoint(large);
+  @include breakpoint(medium);
+  @include breakpoint(small);
+  @include breakpoint("max-width: 1100px");
+}
+
+.post-date {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: $heading-font;
+  color: $body-color;
+}
+
+//Headings
+h1 {
+  text-align: center;
+  
+  a {
+    @include link-styles($body-color);
+    font-family: $heading-font;
+    font-size: 50px;
+    font-weight: 550;
+  }
+}
+
+h2 {
+  margin: 0.5rem 0;
+  
+  a {
+    @include link-styles($normal-visited-color);
+    font-size: 20px;
+    font-family: $heading-font;
+  }
+}
+
+//Paragraphs
+p {
+  font-family: $paragraph-font;
+  font-size: 16px;
+  
+  a {
+    @include link-styles($normal-visited-color);
+  }
+}
+
+//Navigation
+nav {
+  border-top: 1px solid $lines-color;
+  border-bottom: 1px solid $lines-color;
+  margin: 1rem;
+  
+  ul {
+    @include flex-container(column);
+    list-style: none;
+    justify-content: space-evenly;
+    margin-left: 30%;
+  }
+}
+
+
+a {
+  @include link-styles($normal-visited-color);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: $heading-font;
+
+  &:hover {
+    color: $hover-color;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+}
+
+/* Content Grid */
+article {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  > h2 {
+    padding: 0rem 1rem 1rem 1rem;
+    text-align: right;
+  }
+}
+
+section {
+  border-left: 1px solid $lines-color;
+  border-bottom: 1px solid $lines-color;
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+img {
+  max-width: 12rem;
+}
+
+/*# sourceMappingURL=main.scss.map */
