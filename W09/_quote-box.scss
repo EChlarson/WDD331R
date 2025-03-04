@@ -3,9 +3,9 @@
    --box-min-width: 300px;
    --box-preferred-width: 80%;
 
-   --img-max-width: 200px;
+   --img-max-width: 300px;
    --img-min-width: 80px;
-   --img-preferred-width: 20%;
+   --img-preferred-width: 50%;
 
    --primary-color: #0a1229;
    --secondary-color: #F29F05;
@@ -23,11 +23,11 @@
    
    &__quote {
       position: relative;
-      width: 100%;
+      width: 90%;
       margin-left: 2rem;
-      --fluid-type-min: 1.2rem;
+      --fluid-type-min: 1.25rem;
       --fluid-type-target: 2.5vw;
-      --fluid-type-max: 2.4rem;
+      --fluid-type-max: 2rem;
       
       p {
          color: var(--primary-color);
