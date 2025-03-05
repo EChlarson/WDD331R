@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+   margin: 2rem;
+   min-width: 380px;
+}
+
 p {
    font-family: "Sour Gummy", sans-serif;
    font-size: clamp(
@@ -9,4 +14,30 @@ p {
      calc(1rem + var(--fluid-type-target, 3vw)),
      var(--fluid-type-max, 1.3rem)
    );
- }
+}
+
+h1 {
+   font-family: "Sour Gummy", sans-serif;
+   text-align: center;
+   font-size: clamp(
+      var(--fluid-type-min, 4rem),
+      calc(1rem + var(--fluid-type-target, 6vw)),
+      var(--fluid-type-max, 6rem)
+    );
+}
+
+@media (max-width: 650px) {
+   p {
+      font-size: calc(
+         0.7 * clamp(
+            var(--fluid-type-min, 1rem),
+            calc(1rem + var(--fluid-type-target, 3vw)),
+            var(--fluid-type-max, 1.3rem)
+         ));
+   }
+
+   .quote-box__quote::before {
+      --quoteSize: 60px;
+      left: -60px
+   }
+}
