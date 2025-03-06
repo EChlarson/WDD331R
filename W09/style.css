@@ -78,6 +78,18 @@ body {
   min-width: 380px;
 }
 
+body.dark-mode {
+  background-color: #0a1229;
+}
+body.dark-mode h1,
+body.dark-mode p {
+  color: white;
+}
+
+i.fa-toggle-on {
+  color: #F29F05;
+}
+
 p {
   font-family: "Sour Gummy", sans-serif;
   font-size: clamp(var(--fluid-type-min, 1rem), 1rem + var(--fluid-type-target, 3vw), var(--fluid-type-max, 1.3rem));
@@ -87,6 +99,15 @@ h1 {
   font-family: "Sour Gummy", sans-serif;
   text-align: center;
   font-size: clamp(var(--fluid-type-min, 4rem), 1rem + var(--fluid-type-target, 6vw), var(--fluid-type-max, 6rem));
+}
+
+i {
+  font-size: 40px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  color: #0a1229;
 }
 
 @media (max-width: 650px) {

@@ -7,6 +7,19 @@ body {
    min-width: 380px;
 }
 
+body.dark-mode {
+   background-color: #0a1229; 
+   
+   h1,
+   p {
+      color: white;
+   }
+}
+ 
+i.fa-toggle-on {
+   color: #F29F05;
+}
+
 p {
    font-family: "Sour Gummy", sans-serif;
    font-size: clamp(
@@ -24,6 +37,15 @@ h1 {
       calc(1rem + var(--fluid-type-target, 6vw)),
       var(--fluid-type-max, 6rem)
     );
+}
+
+i {
+   font-size: 40px;
+   position: absolute;
+   top: 1rem;
+   right: 1rem;
+   cursor: pointer;
+   color: #0a1229;
 }
 
 @media (max-width: 650px) {
