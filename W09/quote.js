@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', fetchQuote);
+document.getElementById('quote-btn').addEventListener('click', fetchQuote);
 
 async function fetchQuote() {
   const quoteBox = document.getElementById('quoteBox');

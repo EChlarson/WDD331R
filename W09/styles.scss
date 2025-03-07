@@ -4,7 +4,7 @@
 
 body {
    margin: 2rem;
-   min-width: 380px;
+
 }
 
 body.dark-mode {
@@ -81,5 +81,28 @@ i {
    .quote-box__quote::before {
       --quoteSize: 60px;
       left: -60px
+   }
+}
+
+@media (max-width: 440px) {
+
+   h1,
+   p, 
+   .btn {
+      font-size: calc(
+         0.5 * clamp(
+            var(--fluid-type-min, 1rem),
+            calc(1rem + var(--fluid-type-target, 3vw)),
+            var(--fluid-type-max, 1.3rem)
+         ));
+   }
+
+   h1 {
+      margin-top: 4rem;
+   }
+
+   .quote-box__quote::before {
+      --quoteSize: 60px;
+      left: -80px
    }
 }

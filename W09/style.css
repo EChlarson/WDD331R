@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --box-max-width: 700px;
-  --box-min-width: 300px;
+  --box-min-width: 200px;
   --box-preferred-width: 80%;
   --img-max-width: 300px;
   --img-min-width: 80px;
@@ -80,7 +80,6 @@ h1 {
 
 body {
   margin: 2rem;
-  min-width: 380px;
 }
 
 body.dark-mode {
@@ -137,6 +136,20 @@ i {
   .quote-box__quote::before {
     --quoteSize: 60px;
     left: -60px;
+  }
+}
+@media (max-width: 440px) {
+  h1,
+  p,
+  .btn {
+    font-size: calc(0.5 * clamp(var(--fluid-type-min, 1rem), 1rem + var(--fluid-type-target, 3vw), var(--fluid-type-max, 1.3rem)));
+  }
+  h1 {
+    margin-top: 4rem;
+  }
+  .quote-box__quote::before {
+    --quoteSize: 60px;
+    left: -80px;
   }
 }
 
