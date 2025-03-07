@@ -14,6 +14,11 @@ body.dark-mode {
    p {
       color: white;
    }
+
+   .btn {
+      color: white;
+      background-color: #0a1229;
+   }
 }
  
 i.fa-toggle-on {
@@ -48,12 +53,23 @@ i {
    color: #0a1229;
 }
 
-footer {
-   text-align: center;
+.btn {
+   font-family: "Sour Gummy", sans-serif;
+   color: #0a1229;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   font-size: clamp(
+      var(--fluid-type-min, 4rem),
+      calc(1rem + var(--fluid-type-target, 6vw)),
+      var(--fluid-type-max, 6rem)
+    );
 }
 
 @media (max-width: 650px) {
-   p {
+   p, 
+   .btn {
       font-size: calc(
          0.7 * clamp(
             var(--fluid-type-min, 1rem),

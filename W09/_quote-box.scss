@@ -1,5 +1,5 @@
 :root {
-   --box-max-width: 500px;
+   --box-max-width: 700px;
    --box-min-width: 300px;
    --box-preferred-width: 80%;
 
@@ -72,6 +72,18 @@ h1 {
          box-shadow: 10px 10px 0 var(--accent-color);
       }
    }
+}
+
+.btn {
+   --fluid-type-min: 1.25rem;
+   --fluid-type-target: 2.5vw;
+   --fluid-type-max: 2rem;
+
+   border-radius: 20px;
+   border: 8px solid var(--secondary-color);
+   margin: 1rem auto;
+   padding: 0.5em;
+   cursor: pointer;
 }
 
 //Original Assignment
