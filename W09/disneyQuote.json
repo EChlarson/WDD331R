@@ -1,0 +1,178 @@
+{
+   "Funny Disney Quotes": [
+      {
+         "quote":"If you don't think, then you shouldn't talk.",
+         "source":"— March Hare, Alice in Wonderland",
+         "picture":"./images/quote1.svg",
+         "alt": "March Hare"
+      },
+      {
+         "quote":"I'm a damsel, I'm in distress, I can handle this. Have a nice day.",
+         "source":"— Megara, Hercules",
+         "picture":"./images/quote2.svg",
+         "alt": "Megara"
+      },
+      {
+         "quote":"You should be kissed and often, and by someone who knows how.",
+         "source":"— Dmitri, Anastasia",
+         "picture":"./images/quote3.svg",
+         "alt": "Dmitri"
+      },
+      {
+         "quote":"I shall call him Squishy, and he shall be mine, and he shall be my Squishy.",
+         "source":"— Dory, Finding Nemo",
+         "picture":"./images/quote4.svg",
+         "alt": "Dory"
+      },
+      {
+         "quote":"Oh, I'm not crazy. My reality is just different than yours.",
+         "source":"- Cheshire Cat, Alice in Wonderland",
+         "picture":"./images/quote5.svg",
+         "alt": "Cheshire Cat"
+      },
+      {
+         "quote":"The flower that blooms in adversity is the most rare and beautiful of all.",
+         "source":"— The Emperor, Mulan",
+         "picture":"./images/quote6.svg",
+         "alt": "The Emperor"
+      },
+      {
+         "quote":"Ladies do not start fights, but they can finish them.",
+         "source":"— Marie, The Aristocats",
+         "picture":"./images/quote7.svg",
+         "alt": "Marie"
+      },
+      {
+         "quote":"If you can't say something nice, don't say nothin' at all.",
+         "source":"— Thumper, Bambi",
+         "picture":"./images/quote8.svg",
+         "alt": "Thumper"
+      },
+      {
+         "quote":"You know, the thing about good food? It brings people together from all walks of life. It warms them right up, and it puts little smiles on their faces.",
+         "source":"— Remy, Ratatouille",
+         "picture":"./images/quote9.svg",
+         "alt": "Remy"
+      },
+      {
+         "quote":"I don’t know what’s happening, but I’m here for it!",
+         "source":"— Moana, Moana",
+         "picture":"./images/quote10.svg",
+         "alt": "Moana"
+      },
+      {
+         "quote":"I never look back, darling! It distracts from the now.",
+         "source":"— Edna Mode, The Incredibles 2 ",
+         "picture":"./images/quote11.svg",
+         "alt": "Edna Mode"
+      },
+      {
+         "quote":"I think you’re overreacting, but I’ll let it slide.",
+         "source":"Remy, Ratatouille",
+         "picture":"./images/quote9.svg",
+         "alt": "Remy"
+      },
+      {
+         "quote":"I'm not crying, okay? It's just...I'm allergic to the colors.",
+         "source":"— Baymax, Big Hero 6",
+         "picture":"./images/quote12.svg",
+         "alt": "Baymax"
+      },
+      {
+         "quote":"I have a lot of feelings right now!",
+         "source":"— Joy, Inside Out",
+         "picture":"./images/quote13.svg",
+         "alt": "Joy"
+      },
+      {
+         "quote":"That’s a terrible idea! What about a second opinion?",
+         "source":"— Loki, Thor: Ragnarok",
+         "picture":"./images/quote14.svg",
+         "alt": "Loki"
+      },
+      {
+         "quote":"If you don’t have anything nice to say, say it in a different language.",
+         "source":"— Linguini, Ratatouille",
+         "picture":"./images/quote15.svg",
+         "alt": "Linguini"
+      },
+      {
+         "quote":"I don’t know why I feel the need to sing, but I’m feeling it, I’m feeling it!",
+         "source":"— Olaf, Frozen II",
+         "picture":"./images/quote16.svg",
+         "alt": "Olaf"
+      },
+      {
+         "quote":"We all have our issues. Mine is that I can’t decide what to eat for dinner.",
+         "source":"— Dory, Finding Dory",
+         "picture":"./images/quote4.svg",
+         "alt": "Dory"
+      },
+      {
+         "quote":"I'm not afraid of heights. I'm afraid of falling from them!",
+         "source":"— Elsa, Frozen II",
+         "picture":"./images/quote17.svg",
+         "alt": "Elsa"
+      },
+      {
+         "quote":"You got this! You got this! But just in case, I’m right here.",
+         "source":"— Tiana, The Princess and the Frog",
+         "picture":"./images/quote18.svg",
+         "alt": "Tiana"
+      },
+      {
+         "quote":"I’m gonna do what I do best: not think!",
+         "source":"— Puss in Boots, Puss in Boots: The Last Wish",
+         "picture":"./images/quote19.svg",
+         "alt": "Puss in Boots"
+      },
+      {
+         "quote":"We’re not just a snack. We’re a whole meal!",
+         "source":"— Luca, Luca",
+         "picture":"./images/quote20.svg",
+         "alt": "Luca"
+      },
+      {
+         "quote":"Sometimes I just have to sit back and appreciate my own greatness!",
+         "source":"— King Louie, The Jungle Book",
+         "picture":"./images/quote21.svg",
+         "alt": "King Louie"
+      },
+      {
+         "quote":"It’s not a party without a little bit of trouble!",
+         "source":"— Penny, The Nutcracker and the Four Realms",
+         "picture":"./images/quote22.svg",
+         "alt": "Penny"
+      },
+      {
+         "quote":"It’s always best to start with a little bit of chaos!",
+         "source":"— Dr. Facilier, The Princess and the Frog",
+         "picture":"./images/quote23.svg",
+         "alt": "Dr. Facilier"
+      },
+      {
+         "quote":"Giving up is for rookies.",
+         "source":"— Philoctets, Hercules",
+         "picture":"./images/quote24.svg",
+         "alt": "Philoctets"
+      },
+      {
+         "quote":"Today's special moments are tomorrow's memories.",
+         "source":"— Genie, The Return of Jafar",
+         "picture":"./images/quote25.svg",
+         "alt": "Genie"
+      },
+      {
+         "quote":"Sometimes we only see how people are different from us. But if you look hard enough, you can see how much we're all alike.",
+         "source":"— Jasmine, Aladdin",
+         "picture":"./images/quote26.svg",
+         "alt": "Jasmine"
+      },
+      {
+         "quote":"Listen to me. The human world is a mess.",
+         "source":"— Sebastian, The Little Mermaid",
+         "picture":"./images/quote27.svg",
+         "alt": "Sebastian"
+      }
+   ]
+}
