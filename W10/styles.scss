@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+   --heading-font: font-family: "Rokkitt", serif;
+   --paragraph-font: font-family: "Montserrat", sans-serif;
+
+   --icon-text-color: #202121;
+   --icon-hover-background: #e1ebc5;
+
+   --special-type-color: #00365d;
+   --special-background-color: #f1f9fc;
+
+   --label-type-color: #202121;
+   --box-background-color: #fff;
+   --box-border-color: #202121;
+   --box-placeholder-color: rgba(0, 6, 11, .463); //#00080861 or #9ea1a1
+
+   --button-gray-text-color: rgba(0, 6, 11, .463); //#00080861 or #9ea1a1
+   --button-gray-background: rgba(0, 15, 15, .133); //#dddfdf
+   --button-gray-outline-color: #9ea1a1;
+
+   --standard-type-color: rgba(0, 3, 5, .737); //#434547
+   --bold-type-color: #202121;
+   
+   --button-white-text-color: #202121;
+   --button-white-hover-background-color: rgba(0, 13, 13, .078); //#ebecec;
+
+   --button-black-text-color: #fff;
+   --button-black-background-color: #202121;
+   --button-black-hover-background-color: #434547;
+
+   --button-blue-text-color: #066f90;
+}
+
+//background: url(https://edge.fscdn.org/assets/static/media/mobile-apps-image.b02b654….webp) center center / cover no-repeat;
