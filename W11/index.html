@@ -5,13 +5,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>FamilySearch WDD331R Assignment</title>
    <script src="https://kit.fontawesome.com/4ef24c05af.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
    <header>
       <div class="nav-container">
          <div class="logo">
-            <img src="images/familySearchLogo.svg" alt="Family Search Logo">
+            <img src="images/familySearchLogo.svg" alt="Family Search Logo" width="132px" height="33.8px">
             <div class="nav">
                <ul> <!--Fix this menu-->
                   <li>Family Tree</li>
@@ -28,8 +29,8 @@
             </a>
             <i class="fa-solid fa-earth-americas"></i><!--Create Menu?-->
             <i class="fa-regular fa-circle-question"></i><!--Create Menu?-->
-            <i class="fa-solid fa-bars"></i><!--Create Menu?-->
-            <a href="https://ident.familysearch.org/en/identity/login/?state=https://www.familysearch.org/en/united-states/" target="_blank">SIGN IN</a>
+            <!--<i class="fa-solid fa-bars"></i>Create Menu?-->
+            <a id="signIn" href="https://ident.familysearch.org/en/identity/login/?state=https://www.familysearch.org/en/united-states/" target="_blank">SIGN IN</a>
             <a href="https://www.familysearch.org/en/identity/signup/" target="_blank">
                <button type="submit">CREATE ACCOUNT</button>
             </a>
@@ -371,6 +372,6 @@
 
 <!--
    1. Sticky Nav?
-   2. Check Lighthouse (90 or above)
+   2. Check Lighthouse (89 Accessibility)
    3. Menus?
    4. Collapsable list needs JS?-->

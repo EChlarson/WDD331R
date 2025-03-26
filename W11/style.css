@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --heading-font: "Rokkitt", serif;
+  --paragraph-font: "Montserrat", sans-serif;
+  --icon-text-color: #202121;
+  --icon-hover-background: #e1ebc5;
+  --icon-gray-hover-background: rgba(0, 13, 13, .078);
+  --special-type-color: #00365d;
+  --special-background-color: #f1f9fc;
+  --label-type-color: #202121;
+  --box-background-color: #fff;
+  --box-border-color: #202121;
+  --box-placeholder-color: rgba(0, 6, 11, .463);
+  --button-gray-text-color: rgba(0, 6, 11, .463);
+  --button-gray-background: rgba(0, 15, 15, .133);
+  --button-gray-outline-color: #9ea1a1;
+  --standard-type-color: rgba(0, 3, 5, .737);
+  --bold-type-color: #202121;
+  --button-white-text-color: #202121;
+  --button-white-hover-background-color: rgba(0, 13, 13, .078);
+  --button-black-text-color: #fff;
+  --button-black-background-color: #202121;
+  --button-black-hover-background-color: #434547;
+  --button-blue-text-color: #066f90;
+  --button-hover-background: rgba(0, 149, 198, .141);
+  --footer-background-color: rgba(0, 0, 0, .035);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 1rem;
+  font-family: var(--paragraph-font);
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-weight: 400;
+}
+
+header {
+  margin: 1rem 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.logo img {
+  margin-top: -0.8rem;
+}
+.logo .nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.logo .nav ul li:hover {
+  padding: 0.5rem;
+  background-color: var(--icon-hover-background);
+  border-radius: 0.5rem;
+}
+
+.icon-navigation {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.icon-navigation .fa-location-dot,
+.icon-navigation .fa-earth-americas,
+.icon-navigation .fa-circle-question {
+  color: var(--icon-text-color);
+  font-size: 22px;
+  cursor: pointer;
+}
+.icon-navigation .fa-location-dot:hover,
+.icon-navigation .fa-earth-americas:hover,
+.icon-navigation .fa-circle-question:hover {
+  padding: 0.5rem;
+  background-color: var(--icon-hover-background);
+  border-radius: 100%;
+}
+.icon-navigation #signIn {
+  text-decoration: none;
+  color: var(--button-blue-text-color);
+  font-size: 18px;
+}
+.icon-navigation #signIn:hover {
+  padding: 0.5rem;
+  background-color: var(--button-hover-background);
+  border-radius: 0.5rem;
+}
+.icon-navigation button {
+  color: var(--button-blue-text-color);
+  border: solid 1px var(--button-blue-text-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 18px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.icon-navigation button:hover {
+  background-color: var(--button-hover-background);
+  transform: scale(1.02);
+}
+
+/*# sourceMappingURL=style.css.map */

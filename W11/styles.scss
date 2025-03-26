@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-   --heading-font: font-family: "Rokkitt", serif;
-   --paragraph-font: font-family: "Montserrat", sans-serif;
+   --heading-font: "Rokkitt", serif;
+   --paragraph-font: "Montserrat", sans-serif;
 
    --icon-text-color: #202121;
    --icon-hover-background: #e1ebc5;
@@ -31,8 +31,110 @@
    --button-black-hover-background-color: #434547;
 
    --button-blue-text-color: #066f90;
+   --button-hover-background: rgba(0, 149, 198, .141);//#dbf0f7
 
    --footer-background-color: rgba(0, 0, 0, .035); //#f6f6f6
 }
 
-//background: url(https://edge.fscdn.org/assets/static/media/mobile-apps-image.b02b654….webp) center center / cover no-repeat;
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   margin: 1rem;
+   font-family: var(--paragraph-font);
+}
+
+h1 {
+   font-family: var(--heading-font);
+   font-weight: 400;
+}
+
+header {
+   margin: 1rem 0;
+}
+
+.nav-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo {
+
+   display: flex;
+   align-items: center;
+   gap: 20px;
+
+   img {
+      margin-top: -0.8rem;
+   }
+
+   .nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 14px;
+      cursor: pointer;
+
+      li:hover {
+         padding: 0.5rem;
+         background-color: var(--icon-hover-background);
+         border-radius: 0.5rem;
+      }
+   }
+
+}
+
+.icon-navigation {
+   display: flex;
+   gap: 14px;
+   align-items: center;
+
+   .fa-location-dot,
+   .fa-earth-americas,
+   .fa-circle-question {
+      color: var(--icon-text-color);
+      font-size: 22px;
+      cursor: pointer;
+
+      &:hover {
+         padding: 0.5rem;
+         background-color: var(--icon-hover-background);
+         border-radius: 100%;
+      }
+   }
+
+   #signIn {
+      text-decoration: none;
+      color: var(--button-blue-text-color);
+      font-size: 18px;
+
+      &:hover {
+         padding: 0.5rem;
+         background-color: var(--button-hover-background);
+         border-radius: 0.5rem;
+      }
+   }
+
+   button {
+      color: var(--button-blue-text-color);
+      border: solid 1px var(--button-blue-text-color);
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      font-size: 18px;
+      background-color: #fff;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+         background-color: var(--button-hover-background);
+         transform: scale(1.02);
+      }
+   }
+}
+
