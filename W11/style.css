@@ -37,6 +37,10 @@ body {
   font-family: var(--paragraph-font);
 }
 
+main {
+  margin: 0rem 2rem;
+}
+
 h1 {
   font-family: var(--heading-font);
   font-weight: 400;
@@ -117,6 +121,158 @@ header {
 .icon-navigation button:hover {
   background-color: var(--button-hover-background);
   transform: scale(1.02);
+}
+
+.centered-text-container {
+  display: grid;
+  height: 38rem;
+  background-color: var(--special-background-color);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "Text Picture" "Form Picture";
+}
+.centered-text-container .hero-img {
+  grid-area: Picture;
+}
+.centered-text-container .centered-text-content {
+  grid-area: Text;
+  color: var(--special-type-color);
+  margin: 1rem;
+}
+.centered-text-container .centered-text-content h1 {
+  font-size: 56px;
+  line-height: 0.85;
+}
+.centered-text-container .centered-text-content p {
+  font-size: 20px;
+  margin-top: 2rem;
+}
+.centered-text-container .form-container {
+  grid-area: Form;
+  margin: 1rem;
+}
+.centered-text-container .form-container h2 {
+  color: var(--special-type-color);
+}
+.centered-text-container .form-container p {
+  font-size: 20px;
+  color: var(--special-type-color);
+}
+.centered-text-container .form-container form {
+  margin: 1rem 0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.centered-text-container .form-container form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.centered-text-container .form-container form input {
+  width: 100%;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+  border: solid 1px var(--bold-type-color);
+}
+.centered-text-container .form-container form button {
+  width: 50%;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+  background-color: var(--button-gray-background);
+  color: var(--button-gray-text-color);
+  border: solid 1px var(--button-gray-outline-color);
+}
+
+.centered-text {
+  text-align: center;
+  margin: 3rem 0;
+}
+.centered-text a {
+  color: black;
+}
+.centered-text h2 {
+  color: var(--special-type-color);
+}
+
+.split-text-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "Text Picture";
+}
+.split-text-left .left-text-container {
+  grid-area: Text;
+  margin: 4rem;
+  width: 25rem;
+}
+.split-text-left .right-img-container {
+  grid-area: Picture;
+}
+.split-text-left button {
+  width: 50%;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+  margin: 1rem 0rem;
+  background-color: white;
+}
+.split-text-left p a {
+  color: black;
+}
+
+.split-text-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "Picture Text";
+}
+.split-text-right .left-text-container {
+  grid-area: Text;
+  margin: 4rem;
+  width: 25rem;
+}
+.split-text-right .left-img-container {
+  grid-area: Picture;
+}
+.split-text-right button {
+  width: 50%;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  border-radius: 0.2rem;
+  margin: 1rem 0rem;
+  background-color: white;
+}
+.split-text-right p a {
+  color: black;
+}
+
+.list-highlight-items {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 0rem;
+}
+.list-highlight-items .list-highlight-item {
+  margin: 2rem 0rem;
+}
+.list-highlight-items .list-highlight-item img {
+  width: 200px;
+  height: 200px;
+}
+.list-highlight-items .list-highlight-item p a {
+  color: black;
+}
+
+.background-color {
+  background-color: var(--special-background-color);
+}
+.background-color a button {
+  background-color: var(--button-black-background-color);
+  color: var(--button-black-text-color);
 }
 
 /*# sourceMappingURL=style.css.map */
